@@ -1,0 +1,16 @@
+# Configuration file
+
+api:
+ version: "v1"
+ 
+autodiscovery:
+  api:
+    id: "123"
+    
+http:
+  listener:
+    host: "localhost"
+    port: "8089"
+    path: "/db-sa/api/${api.version}"
+    timeout: "120000" #2 min
+    
